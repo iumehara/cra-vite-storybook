@@ -4,16 +4,28 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Spinner {
-    animation: Spinner-spin infinite 20s linear;
+  .Spinner.Right {
+    animation: Spin-right infinite 20s linear;
+  }
+  .Spinner.Left {
+    animation: Spin-left infinite 20s linear;
   }
 }
 
-@keyframes Spinner-spin {
+@keyframes Spin-right {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes Spin-left {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

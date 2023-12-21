@@ -7,4 +7,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  button {
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .Spinner-row {
+    display: flex;
+    flex-direction: row;
+    button {
+      width: 100px;
+    }
+
+    .Spinner-col {
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 100%;
+        height: 100px;
+      }
+    }
+  }
 }

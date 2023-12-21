@@ -1,7 +1,12 @@
 import logo from '../../logo.svg';
 import React from 'react';
 import './Spinner.scss';
+import {SpinDirection} from '../Main';
 
-export const Spinner = () => {
-  return <img src={logo} className="Spinner" alt="logo"/>;
+interface SpinnerProps {
+  direction: SpinDirection
+}
+
+export const Spinner = ({direction}: SpinnerProps) => {
+  return <img src={logo} className={`Spinner ${SpinDirection[direction]}`} alt="logo"/>;
 };
