@@ -9,4 +9,5 @@ export default defineConfig({
     open: true,
     port: 3000,
   },
+  assetsInclude: ['/sb-preview/runtime.js']
 })
